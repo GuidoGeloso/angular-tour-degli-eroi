@@ -1,0 +1,10 @@
+<p>notifiche works!</p>
+
+<h1>Notifiche: </h1>
+<button class="clear" (click)="notificheService.cancellaNotifiche()">Cancella Notifiche</button>
+
+<div *ngIf="notificheService.hasNotifiche()">
+    <div *ngFor="let notifica of notificheService.notifiche">
+         Nofiica: [{{notifica}}] -> {{notificheService.notifiche.length}}
+    </div>
+</div>

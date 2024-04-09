@@ -1,0 +1,32 @@
+<table>
+  <th>
+    idd
+  </th>
+  <th>
+    namee
+  </th>
+  <tr>
+    <td>
+      {{eroeSelezionato.id}}
+    </td>
+    <td>
+      {{eroeSelezionato.nome}}
+    </td>
+  </tr>
+</table>
+<br/>
+
+
+<ul>
+  <li *ngFor="let eroe of eroi" (click)="onEroeSelect(eroe)">
+    {{eroe.id}} - {{eroe.nome}}
+  </li>
+
+</ul>
+
+<div *ngIf="eroeSelezionato">
+  <label for="nome">Heroo:
+    <input type="text" id="nome" [(ngModel)]="eroeSelezionato.nome"/>
+  </label>
+</div>
+

@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { EroiComponent } from './eroi/eroi.component';
+import { NotificheComponent } from './notifiche/notifiche.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, EroiComponent, NotificheComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'tour-degli-eroi';
+  title = 'tour-degli-eroiz';
+  anotherVar = 'myValue';
 }
