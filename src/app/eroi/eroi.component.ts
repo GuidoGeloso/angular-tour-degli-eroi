@@ -8,11 +8,12 @@ import {NgIf} from '@angular/common';
 import { EroeServiceService } from '../eroe-service.service';
 import { Subscription } from 'rxjs';
 import { NotificheService } from '../notifiche.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-eroi',
   standalone: true,
-  imports: [FormsModule, NgFor, NgIf],
+  imports: [FormsModule, NgFor, NgIf, RouterModule],
   templateUrl: './eroi.component.html',
   styleUrl: './eroi.component.css'
 })
